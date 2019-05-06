@@ -103,9 +103,6 @@ tr.order-total.recurring-total {
     border-bottom: 2px solid #760e49;
 }
 
-.caption-style {
-}
-
 .caption-style .caption {
     margin-top: 10px;
     text-align: center;
@@ -118,3 +115,8 @@ tr.order-total.recurring-total {
     text-decoration: none;
     border-bottom: 2px solid #760e49;
 }
+
+.woocommerce .order-total td {
+    color: #60646c !important;
+}
+.entry-summary h4 { margin: 0px !important; }
