@@ -10,10 +10,20 @@ Version: 1.1
 
 /* Parent stylesheet should be loaded from functions.php not using @import */
 
+.fancy-bullet-points {
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.fancy-bullet-points li:before {
+    content: "\2714\0020";
+    color: green;
+}
+
 .red {
     color: red;
 }
-
+.onsale,
 .outofstock-badge {
     display: none;
     visibility: hidden;
@@ -60,6 +70,7 @@ ol li, ul li {
 .vcex-heading-bottom-border-w-color .vcex-heading-inner {
     border-bottom: 4px solid #2c87f0;
 }
+/*
 .products .product .price,
 .entry-summary p.price,
 .woocommerce tr.cart-subtotal,
@@ -70,6 +81,23 @@ ol li, ul li {
 .shop_table td.actions {
     display: none;
     visibility: hidden;
+}
+*/
+.woocommerce .product .summary .price {
+    margin: 5px 0px 5px 0px !important;
+}
+tr.recurring-totals,
+tr.recurring-total {
+    display: none;
+    visibility: hidden;
+}
+tr.cart-discount td,
+tr.cart-subtotal td,
+.product-total {
+    text-align: right;
+}
+tr.cart-discount th {
+    text-transform: uppercase;
 }
 .woocommerce .order-total td {
     color: #760e49;
@@ -87,7 +115,7 @@ tr.order-total.recurring-total {
 }
 */
 .woocommerce-product-details__short-description {
-    padding-top: 10px;
+    padding-top: 0px !important;
 }
 .woo-entry-image-main,
 .woocommerce-product-gallery__image,
@@ -120,3 +148,12 @@ tr.order-total.recurring-total {
     color: #60646c !important;
 }
 .entry-summary h4 { margin: 0px !important; }
+
+.page-header.background-image-page-header .page-subheading {
+    line-height: 1.2em;
+}
+
+.page-header {
+    background-size: cover !important;
+    background: center !important;
+}

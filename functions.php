@@ -62,16 +62,16 @@ function custom_single_excerpt(){
      // Sale formatted  price:
     $product_price = wc_price( wc_get_price_to_display( $product, array( 'price' => $product->get_sale_price() ) ) );
 
-    $custom_text = '<p><strong>'.$product_price.'</strong>/ano ou em até 12x no cartão.<br/><br/>';
-    $custom_text .= '<a href="'.esc_url( get_field('demo_url') ).'" target="_blank">Visualizar Exemplo de Site</a></p>';
+    $custom_text = 'mensalidade fixas de apenas R$ 49 / mês';
+    // $custom_text .= '<p style="margin-top: 10px;"><a href="'.esc_url( get_field('demo_url') ).'" target="_blank">Visualizar Exemplo de Site</a></p>';
 
     // The custom text
     $custom_text .= '<ul class="fancy-bullet-points">
-    <li>Inclui hospedagem do site, certificado de segurança e e-mails personalizados.</li>
-    <li>Modelo de site responsivo, com layout adaptado para celulares, tablets e computadores.</li>
-    <li>Você envia o conteúdo do site (logomarca, textos e imagens) e nós fazemos todo o trabalho de personalização para você.</li>
+    <li>O valor da mensalidade inclui: hospedagem, manutenção e suporte do site, certificado de segurança SSL e e-mails personalizados ilimitados.</li>
+    <li>Você receberá um site responsivo, com layout adaptado para celulares, tablets e computadores.</li>
+    <li>Envie para nós o conteúdo do site (logomarca, textos e imagens) e nós fazemos todo o trabalho de personalização desse modelo para você.</li>
     <li>O modelo escolhido estará disponível em um ambiente de teste para iniciarmos a personalização em até 24 horas após a confirmação de pagamento.</li>
-    <li>O registro do endereço do seu site (seunegocio.com.br) deverá ser pago à parte por você (cerca de R$ 40/ano).</li>
+    <li>O registro do endereço do seu site (seunegocio.com.br ou .com) deverá ser pago à parte por você (cerca de R$ 40 / ano).</li>
     </ul>';
     ?>
     <div class="woocommerce-product-details__short-description">
